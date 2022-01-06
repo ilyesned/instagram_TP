@@ -22,10 +22,10 @@ h1,h2,h3,p,ul,ol,a,th,figure{
 *{
     box-sizing: border-box;
 }
-fieldset img{
+section img{
     width: 70%;
     display: block;
-    margin: 1rem auto;
+    margin: 2rem auto 4rem;
 }
 
 .text_verification{
@@ -44,8 +44,9 @@ fieldset img{
     width: 35rem;
 }
 
-fieldset{
+section{
     border: .1rem solid #ccc;
+    margin: 2rem auto;
 }
 
 
@@ -56,10 +57,13 @@ form *{
     width: 100%;
 }
 
-form input{
+section form input{
+    display: block;
+    margin: 1rem auto;
     background-color: rgb(250,250,250);
     line-height: 3rem;
-    margin-top: 1rem;
+    width: 90%;
+    border-radius: 0.3rem;
 }
 
 
@@ -68,6 +72,8 @@ form input[type=submit]{
     display: block;
     border: none;
     background-color: rgb(83,149,233);
+    margin: 1rem auto 2rem;
+    border-radius: 0.3rem;
 }
 
 
@@ -87,12 +93,14 @@ form input[type=submit]{
 .button_block li:first-child{
     font-size: 1.2rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .button_block li:last-child{
     margin-top: .5rem;
     font-size: 1rem;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .download{
@@ -124,12 +132,14 @@ form input[type=submit]{
 .separator_grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .separator_grid hr{
     width: 100%;
     text-align: center;
+    background-color: #ccc;
 
 }
 .separator_grid p{
@@ -139,6 +149,16 @@ form input[type=submit]{
 
 .main_welcome{
     width: 35rem;
+}
+
+.verify{
+    display: none;
+}
+
+.verifyShow{
+    color: red;
+    display: block;
+    text-align: center;
 }
 
 @media screen and (max-width:60rem){
